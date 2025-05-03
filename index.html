@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Echo Worth Calculator</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="stylesheet.css"></link>
+  </head>
+  <body>
+    <h3>Echo Worth Calculator</h3>
+
+    <!-- Character selection dropdown -->
+    <select name="Character" id="character-dropdown"></select>
+    <select name="Teammates" id="teammates-dropdown"></select>
+
+    <!-- Substat input forms section -->
+    <form id="echo-substats" action="javascript:void(0)">
+      <button id="toggle-defensive-stats">Show/Hide Defensive Stats</button>
+      <table id="">
+        <caption>
+          Echo substats
+        </caption>
+        <thead>
+          <tr>
+            <th>Substat</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody id="offensive-stats">
+          <tr>
+            <td>Crit Rate</td>
+            <td>
+              <div class="substat-input">
+                <label><input type="radio" name="Crit" value="6.3" /> 6.3</label>
+                <label><input type="radio" name="Crit" value="6.9" /> 6.9</label>
+                <label><input type="radio" name="Crit" value="7.5" /> 7.5</label>
+                <label><input type="radio" name="Crit" value="8.1" /> 8.1</label>
+                <label><input type="radio" name="Crit" value="8.7" /> 8.7</label>
+                <label><input type="radio" name="Crit" value="9.3" /> 9.3</label>
+                <label><input type="radio" name="Crit" value="9.9" /> 9.9</label>
+                <label><input type="radio" name="Crit" value="10.5" /> 10.5</label>
+              </div>
+              <button name="Crit-clear">Clear</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Crit Dmg</td>
+            <td>
+              <div class="substat-input">
+                <label><input type="radio" name="CritDmg" value="12.6" /> 12.6</label>
+                <label><input type="radio" name="CritDmg" value="13.8" /> 13.8</label>
+                <label><input type="radio" name="CritDmg" value="15.0" /> 15.0</label>
+                <label><input type="radio" name="CritDmg" value="16.2" /> 16.2</label>
+                <label><input type="radio" name="CritDmg" value="17.4" /> 17.4</label>
+                <label><input type="radio" name="CritDmg" value="18.6" /> 18.6</label>
+                <label><input type="radio" name="CritDmg" value="19.8" /> 19.8</label>
+                <label><input type="radio" name="CritDmg" value="21.0" /> 21.0</label>
+              </div>
+              <button name="CritDmg-clear">Clear</button>
+            </td>
+          </tr>
+          <tr>
+            <td>ER</td>
+            <td>
+              <div class="substat-input">
+                <label><input type="radio" name="ER" value="6.8" /> 6.8</label>
+                <label><input type="radio" name="ER" value="7.6" /> 7.6</label>
+                <label><input type="radio" name="ER" value="8.4" /> 8.4</label>
+                <label><input type="radio" name="ER" value="9.2" /> 9.2</label>
+                <label> <input type="radio" name="ER" value="10" /> 10 </label>
+                <label>
+                  <input type="radio" name="ER" value="10.8" /> 10.8
+                </label>
+                <label>
+                  <input type="radio" name="ER" value="11.6" /> 11.6
+                </label>
+                <label>
+                  <input type="radio" name="ER" value="12.4" /> 12.4
+                </label>
+              </div>
+              <button name="ER-clear">Clear</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Atk%</td>
+            <td>
+              <div class="substat-input">
+                <label><input type="radio" name="Attack" value="6.4" /> 6.4</label>
+                <label><input type="radio" name="Attack" value="7.1" /> 7.1</label>
+                <label><input type="radio" name="Attack" value="7.9" /> 7.9</label>
+                <label><input type="radio" name="Attack" value="8.6" /> 8.6</label>
+                <label><input type="radio" name="Attack" value="9.4" /> 9.4</label>
+                <label><input type="radio" name="Attack" value="10.1" /> 10.1</label>
+                <label><input type="radio" name="Attack" value="10.9" /> 10.9</label>
+                <label><input type="radio" name="Attack" value="11.6" /> 11.6</label>
+              </div>
+              <button name="Attack-clear">Clear</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Atk</td>
+            <td>
+              <div class="substat-input">
+                <label><input type="radio" name="FlatATK" value="30" /> 30</label>
+                <label><input type="radio" name="FlatATK" value="40" /> 40</label>
+                <label><input type="radio" name="FlatATK" value="50" /> 50</label>
+                <label><input type="radio" name="FlatATK" value="60" /> 60</label>
+              </div>
+              <button name="FlatATK-clear">Clear</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Basic</td>
+            <td>
+              <div class="substat-input">
+                <label><input type="radio" name="Normal" value="6.4" />
+                  6.4
+                </label>
+                <label>
+                  <input type="radio" name="Normal" value="7.1" />
+                  7.1
+                </label>
+                <label>
+                  <input type="radio" name="Normal" value="7.9" />
+                  7.9
+                </label>
+                <label>
+                  <input type="radio" name="Normal" value="8.6" />
+                  8.6
+                </label>
+                <label>
+                  <input type="radio" name="Normal" value="9.4" />
+                  9.4
+                </label>
+                <label>
+                  <input type="radio" name="Normal" value="10.1" />
+                  10.1
+                </label>
+                <label>
+                  <input type="radio" name="Normal" value="10.9" />
+                  10.9
+                </label>
+                <label>
+                  <input type="radio" name="Normal" value="11.6" />
+                  11.6
+                </label>
+              </div>
+              <button name="Normal-clear">Clear</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Heavy</td>
+            <td>
+              <div class="substat-input">
+                <label><input type="radio" name="Heavy" value="6.4" /> 6.4</label>
+                <label>
+                  <input type="radio" name="Heavy" value="7.1" />
+                  7.1
+                </label>
+                <label>
+                  <input type="radio" name="Heavy" value="7.9" />
+                  7.9
+                </label>
+                <label>
+                  <input type="radio" name="Heavy" value="8.6" />
+                  8.6
+                </label>
+                <label>
+                  <input type="radio" name="Heavy" value="9.4" />
+                  9.4
+                </label>
+                <label>
+                  <input type="radio" name="Heavy" value="10.1" />
+                  10.1
+                </label>
+                <label>
+                  <input type="radio" name="Heavy" value="10.9" />
+                  10.9
+                </label>
+                <label>
+                  <input type="radio" name="Heavy" value="11.6" />
+                  11.6
+                </label>
+              </div>
+              <button name="Heavy-clear">Clear</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Skill</td>
+            <td>
+              <div class="substat-input">
+                <label><input type="radio" name="Skill" value="6.4" /> 6.4</label>
+                <label>
+                  <input type="radio" name="Skill" value="7.1" />
+                  7.1
+                </label>
+                <label>
+                  <input type="radio" name="Skill" value="7.9" />
+                  7.9
+                </label>
+                <label>
+                  <input type="radio" name="Skill" value="8.6" />
+                  8.6
+                </label>
+                <label>
+                  <input type="radio" name="Skill" value="9.4" />
+                  9.4
+                </label>
+                <label>
+                  <input type="radio" name="Skill" value="10.1" />
+                  10.1
+                </label>
+                <label>
+                  <input type="radio" name="Skill" value="10.9" />
+                  10.9
+                </label>
+                <label>
+                  <input type="radio" name="Skill" value="11.6" />
+                  11.6
+                </label>
+              </div>
+              <button name="Skill-clear">Clear</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Lib</td>
+            <td>
+              <div class="substat-input">
+                <label><input type="radio" name="Liberation" value="6.4" />
+                  6.4
+                </label>
+                <label>
+                  <input type="radio" name="Liberation" value="7.1" />
+                  7.1
+                </label>
+                <label>
+                  <input type="radio" name="Liberation" value="7.9" />
+                  7.9
+                </label>
+                <label>
+                  <input type="radio" name="Liberation" value="8.6" />
+                  8.6
+                </label>
+                <label>
+                  <input type="radio" name="Liberation" value="9.4" />
+                  9.4
+                </label>
+                <label>
+                  <input type="radio" name="Liberation" value="10.1" />
+                  10.1
+                </label>
+                <label>
+                  <input type="radio" name="Liberation" value="10.9" />
+                  10.9
+                </label>
+                <label>
+                  <input type="radio" name="Liberation" value="11.6" />
+                  11.6
+                </label>
+              </div>
+              <button name="Liberation-clear">Clear</button>
+            </td>
+          </tr>
+          <tbody id="defensive-stats" class="hidden">
+          <tr>
+            <td>HP%</td>
+            <td>
+              <div class="substat-input">
+                <label><input type="radio" name="Health" value="6.4" /> 6.4</label>
+                <label><input type="radio" name="Health" value="7.1" /> 7.1</label>
+                <label><input type="radio" name="Health" value="7.9" /> 7.9</label>
+                <label><input type="radio" name="Health" value="8.6" /> 8.6</label>
+                <label><input type="radio" name="Health" value="9.4" /> 9.4</label>
+                <label><input type="radio" name="Health" value="10.1" /> 10.1</label>
+                <label><input type="radio" name="Health" value="10.9" /> 10.9</label>
+                <label><input type="radio" name="Health" value="11.6" /> 11.6</label>
+              </div>
+              <button name="Health-clear">Clear</button>
+            </td>
+          </tr>
+          <tr>
+            <td>HP</td>
+            <td>
+              <div class="substat-input">
+                <label><input type="radio" name="FlatHP" value="30" /> 30</label>
+                <label><input type="radio" name="FlatHP" value="40" /> 40</label>
+                <label><input type="radio" name="FlatHP" value="50" /> 50</label>
+                <label><input type="radio" name="FlatHP" value="60" /> 60</label>
+              </div>
+              <button name="FlatHP-clear">Clear</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Def%</td>
+            <td>
+              <div class="substat-input">
+                <label><input type="radio" name="Defense" value="6.4" /> 6.4</label>
+                <label>
+                  <input type="radio" name="Defense" value="7.1" />
+                  7.1
+                </label>
+                <label>
+                  <input type="radio" name="Defense" name="Defense" value="7.9" /> 7.9</label>
+                <label>
+                  <input type="radio" name="Defense" value="8.6" />
+                  8.6
+                </label>
+                <label>
+                  <input type="radio" name="Defense" value="9.4" />
+                  9.4
+                </label>
+                <label>
+                  <input type="radio" name="Defense" value="10.1" />
+                  10.1
+                </label>
+                <label>
+                  <input type="radio" name="Defense" value="10.9" />
+                  10.9
+                </label>
+                <label>
+                  <input type="radio" name="Defense" value="11.6" />
+                  11.6
+                </label>
+              </div>
+              <button name="Defense-clear">Clear</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Def</td>
+            <td>
+              <div class="substat-input">
+                <label><input type="radio" name="FlatDef" value="30" /> 30</label>
+                <label><input type="radio" name="FlatDef" value="40" /> 40</label>
+                <label><input type="radio" name="FlatDef" value="50" /> 50</label>
+                <label><input type="radio" name="FlatDef" value="60" /> 60</label>
+              </div>
+              <button name="FlatDef-clear">Clear</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+    <input type="button" value="Clear All" id="clear-all" />
+    <input type="button" value="Submit" id="submit-btn" />
+
+    <!-- Display area for calculation result -->
+    <p>Worth relative to Maygi standard:</p>
+    <p id="result">0.00%</p>
+
+    <!--TODO: Worth relative to your character stats:-->
+  </body>
+</html>

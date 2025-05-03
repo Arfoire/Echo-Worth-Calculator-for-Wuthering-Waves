@@ -1,0 +1,127 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  line-height: 1.4;
+  margin: 10px;
+  padding: 0;
+  font-size: 0.9rem;
+}
+
+h3 {
+  color: #00ccff;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+select {
+  padding: 5px;
+  margin-right: 5px;
+  border-radius: 3px;
+  border: 1px solid #555;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+form {
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #2a2a2a;
+  border-radius: 5px;
+}
+
+fieldset {
+  border: 1px solid #555;
+  border-radius: 3px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+legend {
+  color: #00ccff;
+  padding: 0 5px;
+  font-size: 1rem;
+}
+
+label {
+  margin-right: 10px;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+input[type="radio"] {
+  margin-right: 3px;
+  accent-color: #00ccff;
+  transform: scale(0.9);
+}
+
+input[type="button"],
+button {
+  display: inline-block;
+  background-color: #00ccff;
+  color: #1a1a1a;
+  padding: 7px 15px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+  margin-right: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+caption {
+  text-align: left;
+  color: #00ccff;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+thead th {
+  background-color: #333;
+  color: #fff;
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #555;
+  font-size: 0.9rem;
+}
+
+tbody td {
+  padding: 8px;
+  border-bottom: 1px solid #555;
+  font-size: 0.85rem;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #2a2a2a;
+}
+
+p#result {
+  font-size: 10rem;
+  color: #00ccff;
+  text-align: center;
+  margin-top: 0px;
+  font-weight: bold;
+}
+
+.substat-input {
+  display: inline-block; /* Make the container inline */
+  margin-right: 10px; /* Add some space between the inputs and the clear button */
+}
+
+.substat-input label {
+  margin-right: 5px; /* Reduce the space between radio button labels */
+}
+
+.hidden {
+  display: none; /* Hide the element */
+}
