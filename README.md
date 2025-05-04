@@ -1,7 +1,10 @@
 # Echo-Worth-Calculator-for-Wuthering-Waves
 Select from character, what their team is, the substats on the echo you want to evaluate and press Submit, you'll get a number for just how much that echo increases your character's damage in that team.
 
-## How to run:
+## How to run through URL:
+Open this: https://arfoire.github.io/Echo-Worth-Calculator-for-Wuthering-Waves/
+
+## How to run locally:
 1. Download and install NodeJS from the official Node.js download page: https://nodejs.org/
 2. Open a new terminal or command prompt window
 3. On this repository, Code>Downlaod zip
