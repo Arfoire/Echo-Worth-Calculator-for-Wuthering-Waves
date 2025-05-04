@@ -11,6 +11,6 @@ Open this: https://arfoire.github.io/Echo-Worth-Calculator-for-Wuthering-Waves/
 4. Extract the zip anywhere you want
 5. Open the folder in File Explorer
 6. Right click on empty space > Open terminal there
-7. One-time step: run the following command: npm install live-server
-8. Once installed, run this command: live-server
+7. One-time step: run the following command: npm install -g live-server
+8. Run this command in that terminal: live-server
 9. The calculator will open in your default web browser
