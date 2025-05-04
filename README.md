@@ -3,6 +3,7 @@ Select from character, what their team is, the substats on the echo you want to 
 
 ## How to run through URL:
 Open this: https://arfoire.github.io/Echo-Worth-Calculator-for-Wuthering-Waves/
+Press Ctrl + Shift + R if you can't see characters newly added to dropdown
 
 ## How to run locally:
 1. Download and install NodeJS from the official Node.js download page: https://nodejs.org/
