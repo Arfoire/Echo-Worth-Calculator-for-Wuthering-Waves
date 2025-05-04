@@ -176,6 +176,7 @@ document.querySelectorAll('button[name$="-clear"]').forEach((button) => {
 });
 
 // Clear all button for substat forms
+resultField.textContent = "0.00%";
 clearAllButton.addEventListener("click", () => {
   const allRadioGroups = document.querySelectorAll('input[type="radio"]');
   allRadioGroups.forEach((radio) => {
