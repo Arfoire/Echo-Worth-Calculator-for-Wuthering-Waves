@@ -1,8 +1,8 @@
 Character, Teammates, Attack, Health, Defense, Crit, CritDmg, Normal, Heavy, Skill, Liberation, FlatATK, FlatHP, FlatDef, ER
 Xiangli Yao, Yinlin and Verina, 3.15,0.00,0.00,5.07,6.33,0.31,0.00,0.44,1.95,1.45,0.00,0.00,0.00
-Yinlin, Xiangli Yao and Verina, 2.87, 0.00, 0.00, 1.94, 5.81, 0.22, 0.33, 1.85, 0.79, 1.48, 0.00, 0.00, 0.00
+Yinlin, Xiangli Yao and Verina, 2.87, 0.00, 0.00, 3.55, 5.81, 0.22, 0.33, 1.85, 0.79, 1.48, 0.00, 0.00, 0.00
 Xiangli Yao, Yinlin and Shorekeeper, 3.39, 0.00, 0.00, 6.30, 4.80, 0.27, 0.00, 0.45, 1.97, 1.56, 0.00, 0.00, 0.00
-Yinlin, Xiangli Yao and Shorekeeper, 3.09, 0.00, 0.00, 0.00, 5.89, 0.22, 0.35, 1.93, 0.73, 1.59, 0.00, 0.00, 0.00
+Yinlin, Xiangli Yao and Shorekeeper, 3.09, 0.00, 0.00, 1.94, 5.89, 0.22, 0.35, 1.93, 0.73, 1.59, 0.00, 0.00, 0.00
 Xiangli Yao, Changli and Verina, 3.40, 0.00, 0.00, 5.07, 6.33, 0.41, 0.00, 0.50, 1.80, 1.56, 0.00, 0.00, 0.00
 Changli, Xiangli Yao and Verina, 3.28, 0.00, 0.00, 6.17, 5.19, 0.08, 0.00, 1.86, 0.87, 1.45, 0.00, 0.00, 0.00
 Changli, Brant and Shorekeeper, 3.44, 0.00, 0.00, 5.96, 5.11, 0.06, 0.00, 2.00, 0.81, 1.52, 0.00, 0.00, 0.00
@@ -14,7 +14,7 @@ SRover, Phoebe and Shorekeeper, 3.14, 0.00, 0.00, 2.23, 5.02, 0.68, 0.42, 1.43, 
 Jinhsi, Changli and Verina, 3.52, 0.00, 0.00, 6.00, 5.34, 0.18, 0.00, 1.95, 0.81, 1.64, 0.00, 0.00, 0.00
 Changli, Jinhsi and Verina, 3.34, 0.00, 0.00, 6.00, 5.34, 0.02, 0.13, 2.07, 0.90, 1.48, 0.00, 0.00, 0.00
 Jinhsi, Yinlin and Verina, 3.04, 0.00, 0.00, 6.00, 5.34, 0.09, 0.00, 2.30, 0.68, 1.42, 0.00, 0.00, 0.00
-Yinlin, Jinhsi and Verina, 2.86, 0.00, 0.00, 2.04, 5.80, 0.70, 0.26, 1.84, 0.67, 1.48, 0.00, 0.00, 0.00
+Yinlin, Jinhsi and Verina, 2.86, 0.00, 0.00, 3.60, 5.80, 0.70, 0.26, 1.84, 0.67, 1.48, 0.00, 0.00, 0.00
 Jinhsi, Zhezhi and Verina, 3.02, 0.00, 0.00, 6.00, 5.34, 0.16, 0.00, 2.35, 0.61, 1.41, 0.00, 0.00, 0.00
 Zhezhi, Jinshi and Verina, 3.03, 0.00, 0.00, 5.52, 5.65, 2.50, 0.26, 0.40, 0.00, 1.61, 0.00, 0.00, 0.00
 Jiyan, Mortefi and Verina, 2.87, 0.00, 0.00, 6.34, 5.00, 0.00, 2.36, 0.35, 0.00, 1.30, 0.00, 0.00, 0.00
