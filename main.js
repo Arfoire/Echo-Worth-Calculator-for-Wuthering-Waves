@@ -19,7 +19,7 @@ const medianSubs = {
   Skill: 8.6,
   Liberation: 8.6,
   Health: 8.6,
-  FlatHP: 50,
+  FlatHP: 430,
   Defense: 8.6,
   FlatDef: 50,
 };
